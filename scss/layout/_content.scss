@@ -1,0 +1,67 @@
+//BEST OFFER
+.section_header {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    h2 {
+        font-size: 27px;
+        position: relative;
+        color: $text_grey;
+        padding: 25px;
+        &:after{
+            content: "";
+            position: absolute;
+            top: 95%;
+            left: 48%;
+            width: 50px;
+            background: #eee;
+            height: 5px;
+        }
+    }
+    p {
+        padding: 20px 15%;
+        color: $text_grey;
+    }
+    button {
+        width: 130px;
+        font-size: 12px;
+        padding: 10px 12px;
+        font-weight: 700;
+    }
+}
+
+
+//PORTFOLIO
+.portfolio {
+    background: url('../img/portfolio_background.jpg') center center no-repeat;
+    background-size: cover;
+    min-height: 850px;
+}
+
+.portfolio .section_header {
+    h2{
+    color: white;
+    }
+    h2:after{
+        background: white;
+    }
+    p {
+        color: white;
+    }
+}
+
+
+//FEATURES 
+.features_box {
+    ul{
+        list-style-type: none;
+    }
+    li{
+        width: 48%;
+        display: inline-block;
+        padding: 30px;
+    }
+}
+
+    
+

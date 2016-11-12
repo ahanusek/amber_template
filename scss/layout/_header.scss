@@ -1,0 +1,108 @@
+/** START HEADER **/
+
+.top-bar {
+    background-color: $black;
+    padding: 8px 20px;
+    color: $l-grey;
+    input{
+        background: $black;
+        border: 1px solid #646f78;
+        padding: 4px 6px;
+        width: 200px;
+        font-size: 10px;
+        color: $l-grey;
+        font-family: $extra-font;
+        
+    }
+    .fa-search{
+        position: relative;
+        left: -20px;
+    }
+    .i_box{
+        float: right;
+    }
+    .i_box:after{
+        clear: both;
+    }
+    .i_wrapper{
+        margin-left: 35px;
+        a{
+            text-decoration: none;
+            font-size: 10px;
+            color: $l-grey;
+        }
+    }
+    .fa {
+        color: $l-grey;
+        font-size: 15px;
+        margin-right: 5px;
+    }
+    
+}
+
+.header_background {
+    height: 100vh;
+    background: url('../img/background_black.jpg') center center no-repeat;
+    background-size: cover;
+}
+nav {
+    background-color: rgba($d-grey, 0.7);
+    ul{
+        list-style-type: none;
+        li{
+            float: left;
+            font-size: 12px;
+            width: 14.2%;
+            padding: 20px 0px 20px;
+            border-top: 10px solid #ffae00;
+            text-align: center;
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.logo_box{
+    padding: 10px 15px;
+}
+
+.slogan {
+    text-align: center;
+    margin-top: 30vh;
+    color: white;
+    h2{
+        font-size: 50px;
+        &:first-child{
+            color: $seledin;
+        }
+    }
+    button{
+        width: 130px;
+        height: 40px;
+        margin: 5% 25px;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 700;
+    }
+    .seledin {
+        background-color: $seledin;
+        border: none;
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        
+    }
+    
+}
+.transparent {
+        background-color: transparent;
+        border: 3px solid $seledin;
+        a{
+            color: $seledin;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }

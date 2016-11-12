@@ -1,0 +1,25 @@
+// Transition mixin
+
+@mixin transition($duration, $function) {
+    -webkit-transition: all #{$duration} #{$function};
+    -moz-transition: all #{$duration} #{$function};
+    -ms-transition: all #{$duration} #{$function};
+    -o-transition: all #{$duration} #{$function};
+    transition: all #{$duration} #{$function};
+}
+
+
+
+// Mixins and Placeholders
+
+
+@mixin prefix($prop, $val) {
+	@each $prefix in '-webkit-', '-moz-', '-ms-', '' {
+		#{$prefix}#{$prop}: $val;
+	}
+}
+*, *:before, *:after {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}

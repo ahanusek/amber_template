@@ -1,0 +1,260 @@
+/** GLOBAL IMPORT **/
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0; }
+
+body {
+  font-family: "Oxygen", sans-serif; }
+
+/** START HEADER **/
+.top-bar {
+  background-color: #000000;
+  padding: 8px 20px;
+  color: #85939f; }
+  .top-bar input {
+    background: #000000;
+    border: 1px solid #646f78;
+    padding: 4px 6px;
+    width: 200px;
+    font-size: 10px;
+    color: #85939f;
+    font-family: "Lato", sans-serif; }
+  .top-bar .fa-search {
+    position: relative;
+    left: -20px; }
+  .top-bar .i_box {
+    float: right; }
+  .top-bar .i_box:after {
+    clear: both; }
+  .top-bar .i_wrapper {
+    margin-left: 35px; }
+    .top-bar .i_wrapper a {
+      text-decoration: none;
+      font-size: 10px;
+      color: #85939f; }
+  .top-bar .fa {
+    color: #85939f;
+    font-size: 15px;
+    margin-right: 5px; }
+
+.header_background {
+  height: 100vh;
+  background: url("../img/background_black.jpg") center center no-repeat;
+  background-size: cover; }
+
+nav {
+  background-color: rgba(71, 71, 71, 0.7); }
+  nav ul {
+    list-style-type: none; }
+    nav ul li {
+      float: left;
+      font-size: 12px;
+      width: 14.2%;
+      padding: 20px 0px 20px;
+      border-top: 10px solid #ffae00;
+      text-align: center; }
+      nav ul li a {
+        color: white;
+        text-decoration: none; }
+
+.logo_box {
+  padding: 10px 15px; }
+
+.slogan {
+  text-align: center;
+  margin-top: 30vh;
+  color: white; }
+  .slogan h2 {
+    font-size: 50px; }
+    .slogan h2:first-child {
+      color: #02baab; }
+  .slogan button {
+    width: 130px;
+    height: 40px;
+    margin: 5% 25px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700; }
+  .slogan .seledin {
+    background-color: #02baab;
+    border: none; }
+    .slogan .seledin a {
+      color: white;
+      text-decoration: none; }
+
+.transparent {
+  background-color: transparent;
+  border: 3px solid #02baab; }
+  .transparent a {
+    color: #02baab;
+    text-decoration: none;
+    text-transform: uppercase; }
+
+footer {
+  background-color: #1f2a32;
+  color: white; }
+
+.footer_box {
+  padding: 0px 0px;
+  color: white;
+  text-align: left;
+  border-top: 15px solid #7827a9; }
+  .footer_box:nth-child(2) {
+    border-color: #0c8fcc; }
+  .footer_box:nth-child(3) {
+    border-color: #de1c5c; }
+  .footer_box:nth-child(4) {
+    border-color: #ffae00; }
+  .footer_box h4 {
+    margin: 60px 0px 40px;
+    font-size: 22px;
+    font-weight: 400; }
+  .footer_box ul {
+    list-style-type: none;
+    padding: 5px 10px 0px 0px; }
+    .footer_box ul li {
+      padding-top: 30px;
+      font-size: 12px; }
+    .footer_box ul .fa {
+      color: #02baab;
+      margin-right: 5px;
+      font-size: 14px;
+      vertical-align: top; }
+    .footer_box ul .grey {
+      color: #85939f; }
+    .footer_box ul .text_footer {
+      margin-left: 5px;
+      display: inline-block;
+      width: 80%;
+      line-height: 1.5; }
+    .footer_box ul a {
+      color: inherit;
+      text-decoration: none; }
+    .footer_box ul .hash {
+      color: #02baab; }
+    .footer_box ul .date {
+      color: #85939f; }
+
+li .social_icon .fa {
+  color: white;
+  background: #3b5998;
+  padding: 10px 19.3px;
+  font-size: 30px;
+  box-sizing: border-box; }
+li .social_icon .fa-twitter {
+  background: #00a0d1;
+  padding: 10px 13.9px; }
+li .social_icon .fa-youtube {
+  background: #c4302b;
+  padding: 10px 15px; }
+li .social_icon .fa-instagram {
+  background: #825c48;
+  padding: 10px 15px; }
+li .social_icon .fa-pinterest-p {
+  background: #a30834;
+  padding: 10px 17.15px; }
+
+li .social_desc {
+  display: inline-flex;
+  align-items: center;
+  height: 50px; }
+
+.date_post {
+  display: block;
+  padding-bottom: 8px; }
+
+.post_desc {
+  line-height: 1.7;
+  color: #02baab; }
+
+.bottom_bar {
+  margin: 80px 0px 30px; }
+
+.jump_button {
+  float: right;
+  background-color: transparent;
+  padding: 10px 10px;
+  font-size: 12px;
+  min-width: 140px;
+  border: 2px solid #02baab; }
+  .jump_button a {
+    color: #02baab;
+    text-decoration: none; }
+  .jump_button .fa {
+    margin-left: 5px;
+    color: #02baab;
+    font-size: 18px; }
+
+.section_header {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px; }
+  .section_header h2 {
+    font-size: 27px;
+    position: relative;
+    color: #3b4954;
+    padding: 25px; }
+    .section_header h2:after {
+      content: "";
+      position: absolute;
+      top: 95%;
+      left: 48%;
+      width: 50px;
+      background: #eee;
+      height: 5px; }
+  .section_header p {
+    padding: 20px 15%;
+    color: #3b4954; }
+  .section_header button {
+    width: 130px;
+    font-size: 12px;
+    padding: 10px 12px;
+    font-weight: 700; }
+
+.portfolio {
+  background: url("../img/portfolio_background.jpg") center center no-repeat;
+  background-size: cover;
+  min-height: 850px; }
+
+.portfolio .section_header h2 {
+  color: white; }
+.portfolio .section_header h2:after {
+  background: white; }
+.portfolio .section_header p {
+  color: white; }
+
+.features_box ul {
+  list-style-type: none; }
+.features_box li {
+  width: 48%;
+  display: inline-block;
+  padding: 30px; }
+
+/*# sourceMappingURL=layout.css.map */
