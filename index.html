@@ -2,18 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>Amber theme</title>
     <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" type="text/css">  
     <script src="https://use.fontawesome.com/e41dc168e3.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="plugins/owl.carousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="plugins/owl.carousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/layout.css" type="text/css">
 </head>
 <body>
    <!--START HEADER-->
    <div class="container-fluid">
      <header>
-          <div class="top-bar">
+          <div class="top-bar" id="top">
               <div class="container">
                   <div class="row">
                       <div class="col-md-12">
@@ -32,27 +36,41 @@
           <div class="header_background">
                     <nav>
                      <div class="container">
-                      <div class="row">
-                          <div class="col-md-3 logo_box">
+                      <div class="row nav_bar">
+                          <div class="col-md-3 col-xs-6 logo_box">
                               <img src="img/images/logo.png" alt="Amber">
                           </div>
-                          <div class="col-md-9">
-                              <ul>
-                                  <li><a href="">HOME</a></li>
-                                  <li style="border-color:#fc7100;"><a href="">TYPOGRAPHY</a></li>
-                                  <li style="border-color:#e51c5e;"><a href="">BLOG</a></li>
-                                  <li style="border-color:#ae0f8d;"><a href="">PAGES</a></li>
-                                  <li style="border-color:#6d0fae;"><a href="">ELEMENTS</a></li>
-                                  <li style="border-color:#33227a;"><a href="">ECOMMERCE</a></li>
-                                  <li style="border-color:#0c8fcc;"><a href="">MEGA MENU</a></li>
+                          <!--MOBILE MENU-->
+                                <div id="nav-icon4">
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                </div>
+                          <div class="col-md-9 col-xs-12 transition">
+                              <ul class="menu_list">
+                                  <li><a href="">
+                                      <span class="menu_icon"><i class="fa fa-home" aria-hidden="true"></i></span>HOME</a></li>
+                                  <li><a href="">
+                                      <span class="menu_icon"><i class="fa fa-font" aria-hidden="true"></i></span>TYPOGRAPHY</a></li>
+                                  <li><a href="">
+                                      <span class="menu_icon"><i class="fa fa-align-left" aria-hidden="true"></i></span>BLOG</a></li>
+                                  <li><a href="">
+                                      <span class="menu_icon"><i class="fa fa-file" aria-hidden="true"></i></span>PAGES</a></li>
+                                  <li><a href="">
+                                      <span class="menu_icon"><i class="fa fa-th" aria-hidden="true"></i></span>ELEMENTS</a></li>
+                                  <li><a href="">
+                                      <span class="menu_icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>ECOMMERCE</a></li>
+                                  <li><a href="">
+                                      <span class="menu_icon"><i class="fa fa-bars" aria-hidden="true"></i></span>MEGA MENU</a></li>
                               </ul>
+                              
                           </div>
                       </div>
                      </div>
                    </nav>
                    <div class="container">
                        <div class="row">
-                           <div class="col-md-12 slogan">
+                           <div class="col-md-12 slogan wow bounceInUp">
                                <h2>Creating a unique look.</h2>
                                <h2>Never been easier.</h2>
                                <button class="seledin"><a href="">See features</a></button>
@@ -61,10 +79,10 @@
                        </div>
                     </div>
                 </div>      
-                  
+              </header>    
           </div>
       
-   </header>
+   
    <!--END HEADER-->
    <!--START MAIN CONTENT-->
    <section class="best_offer">
@@ -72,8 +90,8 @@
            <div class="row">
                <div class="col-md-12 section_header">
                    <h2>Steal of the month</h2>
-                   <p class="desc">That we can tuck in our children at night and know that they are fed and clothed and safe from harm. Our trails and triumphs became at once unique and universal.</p>
-                   <button class="transparent"><a href="">Purchase now</a></button>
+                   <p class="desc wow zoomIn"  data-wow-delay="500ms">That we can tuck in our children at night and know that they are fed and clothed and safe from harm. Our trails and triumphs became at once unique and universal.</p>
+                   <button class="transparent wow zoomIn" data-wow-delay="700ms"><a href="">Purchase now</a></button>
                </div>
            </div>
        </div>
@@ -83,13 +101,98 @@
            <div class="row">
                <div class="col-md-12 section_header">
                    <h2>Latest works</h2>
-                   <p class="desc">That we can tuck in our children at night and know that they are fed and clothed and safe from harm. Our trails and triumphs became at once unique and universal.</p>
+                   <p class="desc wow zoomIn" data-wow-delay="500ms">That we can tuck in our children at night and know that they are fed and clothed and safe from harm. Our trails and triumphs became at once unique and universal.</p>
                </div>
            </div>
            <div class="row">
-               <div class="col-md-4">FIRST SLIDE</div>
-               <div class="col-md-4">SECOND SLIDE</div>
-               <div class="col-md-4">THIRD SLIDE</div>
+               <div class="owl-carousel portfolio_slider wow zoomIn" data-wow-delay="800ms">
+                   <div class="slide_container">
+                       <div class="slide">
+                           <img src="img/project.jpg" alt="">
+                           <div class="project_desc">
+                               <div class="project_name">Lindemans Wine <span><i class="fa fa-heart" aria-hidden="true"></i></span></div>
+                               <div class="project_type">Art direction, Web desing <span class="like_number">250</span></div>  
+                           </div>
+                           <div class="hover_effect">
+                              <div class="icon_container">
+                                <a href=""><span class="hover_icon"><i class="fa fa-heart" aria-hidden="true"></i></span></a>
+                                <a href=""><span class="hover_icon"><i class="fa fa-search-plus" aria-hidden="true"></i></span></a>
+                                <a href=""><span class="hover_icon"><i class="fa fa-link" aria-hidden="true"></i></span></a>
+                              </div>
+                               
+                           </div>
+                       </div>
+                   </div>
+                   <div class="slide_container">
+                       <div class="slide">
+                           <img src="img/project2.jpg" alt="">
+                           <div class="project_desc">
+                               <div class="project_name">Lindemans Wine <span><i class="fa fa-heart" aria-hidden="true"></i></span></div>
+                               <div class="project_type">Art direction, Web desing <span class="like_number">250</span></div>  
+                           </div>
+                           <div class="hover_effect">
+                              <div class="icon_container">
+                                <a href=""><span class="hover_icon"><i class="fa fa-heart" aria-hidden="true"></i></span></a>
+                                <a href=""><span class="hover_icon"><i class="fa fa-search-plus" aria-hidden="true"></i></span></a>
+                                <a href=""><span class="hover_icon"><i class="fa fa-link" aria-hidden="true"></i></span></a>
+                              </div>
+                               
+                           </div>
+                       </div>
+                   </div>
+                   <div class="slide_container">
+                       <div class="slide">
+                           <img src="img/project3.jpg" alt="">
+                           <div class="project_desc">
+                               <div class="project_name">Lindemans Wine <span><i class="fa fa-heart" aria-hidden="true"></i></span></div>
+                               <div class="project_type">Art direction, Web desing <span class="like_number">250</span></div>  
+                           </div>
+                           <div class="hover_effect">
+                              <div class="icon_container">
+                                <a href=""><span class="hover_icon"><i class="fa fa-heart" aria-hidden="true"></i></span></a>
+                                <a href=""><span class="hover_icon"><i class="fa fa-search-plus" aria-hidden="true"></i></span></a>
+                                <a href=""><span class="hover_icon"><i class="fa fa-link" aria-hidden="true"></i></span></a>
+                              </div>
+                               
+                           </div>
+                       </div>
+                   </div>
+                   <div class="slide_container">
+                       <div class="slide">
+                           <img src="img/project.jpg" alt="">
+                           <div class="project_desc">
+                               <div class="project_name">Lindemans Wine <span><i class="fa fa-heart" aria-hidden="true"></i></span></div>
+                               <div class="project_type">Art direction, Web desing <span class="like_number">250</span></div>  
+                           </div>
+                           <div class="hover_effect">
+                              <div class="icon_container">
+                                <a href=""><span class="hover_icon"><i class="fa fa-heart" aria-hidden="true"></i></span></a>
+                                <a href=""><span class="hover_icon"><i class="fa fa-search-plus" aria-hidden="true"></i></span></a>
+                                <a href=""><span class="hover_icon"><i class="fa fa-link" aria-hidden="true"></i></span></a>
+                              </div>
+                               
+                           </div>
+                       </div>
+                   </div>
+                   <div class="slide_container">
+                       <div class="slide">
+                           <img src="img/project.jpg" alt="">
+                           <div class="project_desc">
+                               <div class="project_name">Lindemans Wine <span><i class="fa fa-heart" aria-hidden="true"></i></span></div>
+                               <div class="project_type">Art direction, Web desing <span class="like_number">250</span></div>  
+                           </div>
+                           <div class="hover_effect">
+                              <div class="icon_container">
+                                <a href=""><span class="hover_icon"><i class="fa fa-heart" aria-hidden="true"></i></span></a>
+                                <a href=""><span class="hover_icon"><i class="fa fa-search-plus" aria-hidden="true"></i></span></a>
+                                <a href=""><span class="hover_icon"><i class="fa fa-link" aria-hidden="true"></i></span></a>
+                              </div>
+                               
+                           </div>
+                       </div>
+                   </div>
+      
+               </div>
            </div>
        </div>
    </section>
@@ -103,27 +206,37 @@
            <div class="row">
                <div class="col-md-12 features_box">
                    <ul>
-                       <li>
-                           <span class="icon">
-                               <i class="fa fa-star" aria-hidden="true"></i>
-                           </span>
-                           <icon_text>
+                       <li class="wow fadeInLeft" data-wow-delay="200ms">
+                           <span class="icon"><i class="fa fa-star" aria-hidden="true"></i></span>      
+                           <span class="icon_text">
                                <span class="icon_header">Brilliant creative design</span>
                                <span class="icon_desc">Ah well! It means much time the same thing, said the Duchess, digging her sharp little chin into Alice's shoulder as she added, and the moral of thah is m-dash.</span>
-                           </icon_text>
+                           </span>
                            
                        </li>
-                       <li>
-                           <span class="icon">STAR</span><span class="icon_header">Brilliant creative design</span>
-                           <span class="icon_desc">Ah well! It means much time the same thing, said the Duchess, digging her sharp little chin into Alice's shoulder as she added, and the moral of thah is m-dash.</span>
+                       <li class="wow fadeInRight" data-wow-delay="300ms">
+                           <span class="icon"><i class="fa fa-trophy" aria-hidden="true"></i></span>      
+                           <span class="icon_text">
+                               <span class="icon_header">Brilliant creative design</span>
+                               <span class="icon_desc">Ah well! It means much time the same thing, said the Duchess, digging her sharp little chin into Alice's shoulder as she added, and the moral of thah is m-dash.</span>
+                           </span>
+                           
                        </li>
-                       <li>
-                           <span class="icon">STAR</span><span class="icon_header">Brilliant creative design</span>
-                           <span class="icon_desc">Ah well! It means much time the same thing, said the Duchess, digging her sharp little chin into Alice's shoulder as she added, and the moral of thah is m-dash.</span>
+                       <li class="wow fadeInLeft" data-wow-delay="400ms">
+                           <span class="icon"><i class="fa fa-magic" aria-hidden="true"></i></span>      
+                           <span class="icon_text">
+                               <span class="icon_header">Brilliant creative design</span>
+                               <span class="icon_desc">Ah well! It means much time the same thing, said the Duchess, digging her sharp little chin into Alice's shoulder as she added, and the moral of thah is m-dash.</span>
+                           </span>
+                           
                        </li>
-                       <li>
-                           <span class="icon">STAR</span><span class="icon_header">Brilliant creative design</span>
-                           <span class="icon_desc">Ah well! It means much time the same thing, said the Duchess, digging her sharp little chin into Alice's shoulder as she added, and the moral of thah is m-dash.</span>
+                       <li class="wow fadeInRight" data-wow-delay="500ms">
+                           <span class="icon"><i class="fa fa-cloud-upload" aria-hidden="true"></i></span>      
+                           <span class="icon_text">
+                               <span class="icon_header">Brilliant creative design</span>
+                               <span class="icon_desc">Ah well! It means much time the same thing, said the Duchess, digging her sharp little chin into Alice's shoulder as she added, and the moral of thah is m-dash.</span>
+                           </span>
+                           
                        </li>
                    </ul>
                </div>
@@ -133,62 +246,115 @@
    <section class="quotes_slider">
        <div class="container">
            <div class="row">
-               <div class="col-md-12">Here will be a some quotes about how we are funny.</div>
+               <div class="col-md-12">
+                  <div class="owl-carousel quotes_container wow zoomIn" data-wow-delay="400ms" data-wow-offset="50">
+                      <div class="quote_wrapper">
+                           <div class="quote_icon"><i class="fa fa-quote-right" aria-hidden="true"></i></div>
+                           <div class="quote_text">You follow drugs, you get drug addicts and drug dealers. But you start to follow the money, and you don't know where the fuck it's gonna take you.</div>
+                           <div class="quote_author">- The Wire, Leaster Freamon</div>    
+                       </div>
+                       <div class="quote_wrapper">
+                           <div class="quote_icon"><i class="fa fa-quote-right" aria-hidden="true"></i></div>
+                           <div class="quote_text">You know what my father used to say? "Being with a client is like being in a marriage. Sometimes you get into it for the wrong reasons, and eventually they hit you in the face.</div>
+                           <div class="quote_author">- Mad Men, Roger Sterling</div>    
+                       </div>
+                       <div class="quote_wrapper">
+                           <div class="quote_icon"><i class="fa fa-quote-right" aria-hidden="true"></i></div>
+                           <div class="quote_text">Well, I hate to break it to you, but there is no big lie. There is no system. The universe is indifferent.</div>
+                           <div class="quote_author">- Mad Men, Don Draper</div>    
+                       </div>
+                      
+                  </div>
+                   
+                   
+               </div>
            </div>
        </div>
    </section>
    <section class="latest_blog">
        <div class="container">
            <div class="row">
-               <div class="col-md-12">
+               <div class="col-md-12 section_header">
                    <h2>Latest blog posts</h2>
                </div>
            </div>
-           <div class="row">
-               <div class="col-md-4">
-                   <img src="" alt="">
-                   <span class="post_title">Runway to Red Carpet: Awards Season</span>
-                   <span class="post_content">Her father worked on oil rigs and farms tha through most of the Depression. But it is a new story that has seared into my genetic.</span>
-                   <span class="post_more"><a href="">Learn more</a></span>
-                   <span class="comments"><a href="">Comments</a></span>
+           <div class="row posts_container">
+               <div class="col-md-4 wow zoomIn" data-wow-offset="60" data-wow-delay="100ms">
+                  <div class="post_wrapper">
+                      <img src="img/thumb.jpg" alt="">
+                       <h3 class="post_title">Runway to Red Carpet: Awards Season</h3>
+                       <span class="post_content">Her father worked on oil rigs and farms tha through most of the Depression. But it is a new story that has seared into my genetic.</span>
+                       <span class="post_more"><a href="">Learn more</a></span>
+                       <span class="comments"><a href=""><i class="fa fa-comments" aria-hidden="true"></i> 450</a></span>
+                       <div class="clearfix"></div>
+                  </div>
+                   
                </div>
-               <div class="col-md-4">
-                   <img src="" alt="">
-                   <span class="post_title">Runway to Red Carpet: Awards Season</span>
-                   <span class="post_content">Her father worked on oil rigs and farms tha through most of the Depression. But it is a new story that has seared into my genetic.</span>
-                   <span class="post_more"><a href="">Learn more</a></span>
-                   <span class="comments"><a href="">Comments</a></span>
+               <div class="col-md-4 wow zoomIn" data-wow-offset="60" data-wow-delay="250ms">
+                   <div class="post_wrapper">
+                      <img  src="img/thumb2.jpg" alt="">
+                       <h3 class="post_title">Runway to Red Carpet: Awards Season</h3>
+                       <span class="post_content">Her father worked on oil rigs and farms tha through most of the Depression. But it is a new story that has seared into my genetic.</span>
+                       <span class="post_more"><a href="">Learn more</a></span>
+                       <span class="comments"><a href=""><i class="fa fa-comments" aria-hidden="true"></i> 450</a></span>
+                       <div class="clearfix"></div>
+                  </div>
                </div>
-               <div class="col-md-4">
-                   <img src="" alt="">
-                   <span class="post_title">Runway to Red Carpet: Awards Season</span>
-                   <span class="post_content">Her father worked on oil rigs and farms tha through most of the Depression. But it is a new story that has seared into my genetic.</span>
-                   <span class="post_more"><a href="">Learn more</a></span>
-                   <span class="comments"><a href="">Comments</a></span>
+               <div class="col-md-4 wow zoomIn" data-wow-offset="60" data-wow-delay="350ms">
+                   <div class="post_wrapper">
+                      <img src="img/thumb3.jpg" alt="">
+                       <h3 class="post_title">Runway to Red Carpet: Awards Season</h3>
+                       <span class="post_content">Her father worked on oil rigs and farms tha through most of the Depression. But it is a new story that has seared into my genetic.</span>
+                       <span class="post_more"><a href="">Learn more</a></span>
+                       <span class="comments"><a href=""><i class="fa fa-comments" aria-hidden="true"></i> 450</a></span>
+                       <div class="clearfix"></div>
+                  </div>
                </div>
            </div>
        </div>
    </section>
-   <section class="company_expirience">
+   <section class="company_expirience" id="exp_bar">
        <div class="container">
            <div class="row">
-               <div class="col-md-12">Company expirience</div>
+               <div class="col-md-12 section_header">
+                   <h2>Company expirience</h2>
+               </div>
            </div>
            <div class="row">
-               <div class="col-md-4">
-                   <span class="exp_icon">Telephone</span>
-                   <span class="exp_number">500</span>
-                   <span class="exp_desc">yeard of web development</span>
-               </div>
-               <div class="col-md-4">
-                   <span class="exp_icon">Telephone</span>
-                   <span class="exp_number">500</span>
-                   <span class="exp_desc">yeard of web development</span>
-               </div>
-               <div class="col-md-4">
-                   <span class="exp_icon">Telephone</span>
-                   <span class="exp_number">500</span>
-                   <span class="exp_desc">yeard of web development</span>
+               <div class="col-md-12">
+                  <ul class="exp_features">
+                      <li>
+                             
+                            <span class="exp_icon"><i class="fa fa-cogs" aria-hidden="true"></i></span>
+                            <span class="exp_number counter">500</span>
+                            <span class="exp_desc">years of web development</span>
+                            
+                        <div class="li_dots">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                            <div class="progress" id="progress"></div>    
+                      </li>
+                      
+                      <li>
+                        <span class="exp_icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <span class="exp_number counter">25.000</span>
+                        <span class="exp_desc">result of the last winter year</span>
+                        <div class="li_dots">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                        <div class="progress" id="progress_2"></div>     
+                      </li>
+                      <li>
+                        <span class="exp_icon"><i class="fa fa-rocket" aria-hidden="true"></i></span>
+                        <span class="exp_number counter">100.000</span>
+                        <span class="exp_desc">euors of the military budget</span>
+                        <div class="progress" id="progress_3"></div>   
+                      </li>
+                  </ul>
                </div>
            </div>
        </div>
@@ -196,38 +362,66 @@
    <section class="team">
        <div class="container">
            <div class="row">
-               <div class="col-md-12">
+               <div class="col-md-12 section_header">
                    <h2>Our team</h2>
                </div>
            </div>
-           <div class="row">
-               <div class="col-md-3">
-                   <img src="" alt="">
-                   <span class="name">Manny Delgado</span>
-                   <span class="position">a little boy</span>
-                   <span class="staff_desc">Be who you are and say what you feel, because those who mind don't matter.</span>
-                   <button><a href="">Profile</a></button>
+           <div class="row staff">
+               <div class="col-md-3 col-sm-6 wow zoomIn" data-wow-offset="60" data-wow-delay="100ms">
+                  <div class="person_container">
+                       <img src="img/person.jpg" alt="">
+                       <button class="transparent"><a href="">Profile</a></button>
+                       <div class="staff_desc">Be who you are and say what you feel, because those who mind don't matter.
+                           <div class="person">
+                               <h4>Andrew Johnson</h4>
+                               <div class="position">web developer</div>
+                           </div>
+                       </div>
+                       
+                  </div>
+                   
                </div>
-               <div class="col-md-3">
-                   <img src="" alt="">
-                   <span class="name">Manny Delgado</span>
-                   <span class="position">a little boy</span>
-                   <span class="staff_desc">Be who you are and say what you feel, because those who mind don't matter.</span>
-                   <button><a href="">Profile</a></button>
+                <div class="col-md-3 col-sm-6 wow zoomIn" data-wow-offset="60" data-wow-delay="200ms">
+                  <div class="person_container">
+                       <img src="img/person2.jpg" alt="">
+                       <button class="transparent"><a href="">Profile</a></button>
+                       <div class="staff_desc">Be who you are and say what you feel, because those who mind don't matter.
+                           <div class="person">
+                               <h4>Emy Blackhouse</h4>
+                               <div class="position">project manager</div>
+                           </div>
+                       </div>
+                       
+                  </div>
+                   
                </div>
-               <div class="col-md-3">
-                   <img src="" alt="">
-                   <span class="name">Manny Delgado</span>
-                   <span class="position">a little boy</span>
-                   <span class="staff_desc">Be who you are and say what you feel, because those who mind don't matter.</span>
-                   <button><a href="">Profile</a></button>
+                <div class="col-md-3 col-sm-6 wow zoomIn" data-wow-offset="60" data-wow-delay="300ms">
+                  <div class="person_container">
+                       <img src="img/person3.jpg" alt="">
+                       <button class="transparent"><a href="">Profile</a></button>
+                       <div class="staff_desc">Be who you are and say what you feel, because those who mind don't matter.
+                           <div class="person">
+                               <h4>Mary Delgado</h4>
+                               <div class="position">seo specialist</div>
+                           </div>
+                       </div>
+                       
+                  </div>
+                   
                </div>
-               <div class="col-md-3">
-                   <img src="" alt="">
-                   <span class="name">Manny Delgado</span>
-                   <span class="position">a little boy</span>
-                   <span class="staff_desc">Be who you are and say what you feel, because those who mind don't matter.</span>
-                   <button><a href="">Profile</a></button>
+                <div class="col-md-3 col-sm-6 wow zoomIn" data-wow-offset="60" data-wow-delay="400ms">
+                  <div class="person_container">
+                       <img src="img/person4.jpg" alt="">
+                       <button class="transparent"><a href="">Profile</a></button>
+                       <div class="staff_desc">Be who you are and say what you feel, because those who mind don't matter.
+                           <div class="person">
+                               <h4>Amy Swift</h4>
+                               <div class="position">designer</div>
+                           </div>
+                       </div>
+                       
+                  </div>
+                   
                </div>
            </div>
        </div>
@@ -237,9 +431,9 @@
    <footer>
        <div class="container">
            <div class="row">
-               <div class="col-md-3 footer_box">
+               <div class="col-md-3 col-xs-6 footer_box">
                    <h4>Get in touch</h4>
-                   <ul>
+                   <ul class="wow bounceInUp" data-wow-offset="60">
                        <li>
                            <i class="fa fa-flag" aria-hidden="true"></i>
                             Adress: <span class="grey">321 Street Name, United Kingdom, London</span>
@@ -256,19 +450,19 @@
                        </li>
                    </ul>
                </div>
-               <div class="col-md-3 footer_box">
+               <div class="col-md-3 col-xs-6 footer_box">
                    <h4>Latest tweets</h4>
-                   <ul>
-                       <li><i class="fa fa-twitter" aria-hidden="true"></i><span class="text_footer">CMS Masters And Their Best Web Design Tools <span class="hash">#bestwebdesigntools #webdesign</span> <span class="date">                        <br>- about 12 min ago</span></li></span>
+                   <ul class="wow bounceInUp" data-wow-offset="60">
+                       <li><i class="fa fa-twitter" aria-hidden="true"></i><span class="text_footer">CMS Masters And Their Best Web Design Tools <span class="hash">#bestwebdesigntools #webdesign</span> <span class="date">                        <br>- about 12 min ago</span></span></li>
                    <li><i class="fa fa-twitter" aria-hidden="true"></i><span class="text_footer">CMS Masters And Their Best Web Design Tools <span class="hash">#bestwebdesigntools #webdesign</span> <span class="date">
-                      <br>- about 12 min ago</span></li></span></li>
+                      <br>- about 12 min ago</span></span></li>
                        <li><i class="fa fa-twitter" aria-hidden="true"></i><span class="text_footer">CMS Masters And Their Best Web Design Tools <span class="hash">#bestwebdesigntools #webdesign</span> <span class="date">
-                       <br>- about 12 min ago</span></li></span></li>
+                       <br>- about 12 min ago</span></span></li>
                    </ul>
                </div>
-               <div class="col-md-3 footer_box">
+               <div class="col-md-3 col-xs-6 footer_box">
                    <h4>Follow Us</h4>
-                   <ul>
+                   <ul class="wow bounceInUp" data-wow-offset="60">
                        <li>
                            <a href="">
                                <span class="social_icon"><i class="fa fa-facebook" aria-hidden="true"></i></span>
@@ -301,9 +495,9 @@
                         </li>
                    </ul>
                </div>
-               <div class="col-md-3 footer_box">
+               <div class="col-md-3 col-xs-6 footer_box">
                    <h4>Popular posts</h4>
-                   <ul>
+                   <ul class="wow bounceInUp"  data-wow-offset="60">
                        <li><a href=""><span class=date_post>September, 30 </span><span class="post_desc">Candy canes dragee pudding. Donut cheesecake I love chocolate icing.</span></a></li>
                        <li><a href=""><span class=date_post>April, 24 </span><span class="post_desc">Candy canes dragee pudding. Donut cheesecake I love chocolate icing.</span></a></li>
                        <li><a href=""><span class=date_post>May, 11 </span><span class="post_desc">Candy canes dragee pudding. Donut cheesecake I love chocolate icing.</span></a></li>
@@ -311,18 +505,25 @@
                </div>
            </div>
            <div class="row bottom_bar">
-               <div class="col-md-6">&copy; 2016 All rights reserved</div>
-               <div class="col-md-6">
-                   <button class="jump_button">
+               <div class="col-xs-6 copyright">&copy; 2016 All rights reserved</div>
+               <div class="col-xs-6">
+                   <a onclick="$('#top').animatescroll({scrollSpeed:2500,padding:0});">
+                       <button class="jump_button" >
                        Back to top of page<i class="fa fa-angle-up" aria-hidden="true"></i>
-                   </button>
+                       </button>
+                   </a>
                </div>
            </div>
        </div>
    </footer>
-</div>
    <!--END FOOTER-->
-   
-    
+   <script src="js/jquery-2.1.4.min.js"></script>
+   <script src="plugins/owl.carousel/owl.carousel.min.js"></script>
+   <script src="plugins/progressbar.min.js"></script>
+   <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+   <script src="plugins/jquery.counterup.min.js"></script>
+   <script src="js/animatescroll.js"></script>
+   <script src="js/wow.js"></script>
+   <script src="js/main.js"></script>
 </body>
 </html>
